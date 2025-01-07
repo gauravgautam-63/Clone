@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar .logo {
+  padding: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.navbar .menu .menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu .menu-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .menu .menu-item .dropdown {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: none;
+  box-shadow: 0 8px 16px black;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.navbar .menu .menu-item .dropdown li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .menu-item .dropdown li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar .menu .menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.header-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dotted black;
+  width: 90%;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  background-color: black;
+  color: white;
+  width: 90%;
+  height: 480px;
+  border-radius: 20px;
+  gap: 10px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(226, 205, 205);
+  margin-top: 50px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/11152024/kv-hero_DT.jpg?imwidth=1366);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tv-range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin-top: 80px;
+  height: 650px;
+}
+
+.tv-range h2 {
+  border-bottom: 2px solid black;
+}
+
+.tv-range .imgg {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  gap: 10px;
+  height: 580px;
+}
+
+.tv-range .imgg .pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f1f1;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.tv-range .imgg .pic p {
+  width: 300px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/12102024/features_NeoQLED8K_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.box1 .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 500px;
+  gap: 20px;
+}
+
+.box1 .text .btn a {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.box1 .text .btn a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/12102024/features_NeoQLED_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.box2 .text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 50px;
+  width: 500px;
+  gap: 20px;
+}
+
+.box2 .text .btn a {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.box2 .text .btn a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/12102024/features_OLED_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.box3 .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 500px;
+  gap: 20px;
+}
+
+.box3 .text .btn a {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.box3 .text .btn a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/12102024/features_QLED_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.box4 .text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 50px;
+  width: 500px;
+  gap: 20px;
+}
+
+.box4 .text .btn a {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.box4 .text .btn a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/12102024/features_UHD_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.box5 .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 500px;
+  gap: 20px;
+}
+
+.box5 .text .btn a {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.box5 .text .btn a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.box6 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/tvs/12102024/features_Frame_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.box6 .text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 50px;
+  width: 500px;
+  gap: 20px;
+}
+
+.box6 .text .btn a {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.box6 .text .btn a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 80px;
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+}
+
+.sentence .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: smaller;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+  padding: 20px 50px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons span {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,674 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar .logo {
+  padding: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.navbar .menu .menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu .menu-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .menu .menu-item .dropdown {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: none;
+  box-shadow: 0 8px 16px black;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.navbar .menu .menu-item .dropdown li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .menu-item .dropdown li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar .menu .menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.header-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dotted black;
+  width: 90%;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/12232024/SDSAC-8246-NewYear-05-Book-PCD_DT_1440x810.jpg?imwidth=1366);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.laptop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: 380px;
+  width: 90%;
+  margin-top: 80px;
+}
+
+.laptop .imgg {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 300px;
+  gap: 20px;
+}
+
+.laptop .imgg .pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: small;
+}
+
+.laptop .imgg .pic img {
+  width: 185px;
+}
+
+.laptop .imgg .pic:hover {
+  scale: 1.1;
+}
+
+.laptop .imgg .pic a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.laptop .imgg .pic a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.5px;
+  border: 2px solid black;
+}
+
+.supercharge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+}
+
+.supercharge .book5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/09302024/GB-PCD-Showcase-FT03-FeatureFullBleed-KV-GB5Pro360-Product-Logos-GalaxyAI-CopilotPC-asterik-IntelCore-D.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.supercharge .book5 .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-top: 100px;
+  gap: 10px;
+  width: 400px;
+}
+
+.supercharge .book5 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.supercharge .book5 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.5px;
+  border: 2px solid black;
+}
+
+.supercharge .imgg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 500px;
+  width: 100%;
+}
+
+.supercharge .imgg .pic1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/09302024/GB-PCD-Showcase-CO11-BleedCard-GB5Pro360-01-AI-D-V2.jpg?$720_520_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.supercharge .imgg .pic1 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 400px;
+  gap: 10px;
+}
+
+.supercharge .imgg .pic1 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.supercharge .imgg .pic1 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.supercharge .imgg .pic2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/09302024/GB-PCD-Showcase-CO11-BleedCard-GB5Pro360-02-Design-D-V3.jpg?$720_520_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.supercharge .imgg .pic2 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 400px;
+  gap: 10px;
+}
+
+.supercharge .imgg .pic2 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.supercharge .imgg .pic2 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+}
+
+.right .power {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/10032024/GB-PCD-Interests-FT03-FeatureFullBleed-Experts-GalaxyChromebookPlus-D.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.right .power .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 50px;
+  width: 500px;
+}
+
+.right .power .text .btn {
+  display: flex;
+  gap: 10px;
+}
+
+.right .power .text .btn a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.right .power .text .btn a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.domore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+  height: 500px;
+}
+
+.domore .imgg {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  height: 400px;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.domore .imgg .pic1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-image: url(https://images.samsung.com/is/image/samsung/assets/us/2302/pcd/galaxybooks/01282023/FT16-GB3HUB-FeatureBenefitCarde-Monitors-D.jpg?$330_N_PNG_JPG$);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.domore .imgg .pic1 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: small;
+  width: 250px;
+  margin-top: 50px;
+}
+.domore .imgg .pic1 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 100px;
+}
+
+.domore .imgg .pic1 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.domore .imgg .pic2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/08232024/FT16-FeatureBenefitCard-GalaxyBuds-Buds3-Pro-D.jpg?$330_N_PNG_JPG$);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.domore .imgg .pic2 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: small;
+  width: 250px;
+  margin-top: 50px;
+}
+
+.domore .imgg .pic2 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 100px;
+}
+
+.domore .imgg .pic2 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.domore .imgg .pic3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/08232024/FT16-FeatureBenefitCard-Accessories-MultiportAdapter-D.jpg?$330_N_PNG_JPG$);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.domore .imgg .pic3 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: small;
+  width: 250px;
+  margin-top: 50px;
+}
+
+.domore .imgg .pic3 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 100px;
+}
+
+.domore .imgg .pic3 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.domore .imgg .pic4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-image: url(https://images.samsung.com/is/image/samsung/assets/us/2302/pcd/galaxybooks/01252023/FT16-GB3HUB-FeatureBenefitCarde-MemoryStorage-D.png?$330_N_PNG_PNG$);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.domore .imgg .pic4 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: small;
+  width: 250px;
+  margin-top: 50px;
+}
+
+.domore .imgg .pic4 .text a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  width: 100px;
+}
+
+.domore .imgg .pic4 .text a:hover {
+  background-color: white;
+  color: black;
+  padding: 8.4px;
+  border: 2px solid black;
+}
+
+.best_deal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  width: 90%;
+  font-size: 13px;
+  margin-top: 80px;
+}
+
+.best_deal .imgg {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.best_deal .imgg::-webkit-scrollbar {
+  display: none;
+}
+
+.book4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 500px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/02212024/GB4-PCD_FT02_Business_PC.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  color: white;
+  margin-top: 80px;
+}
+
+.book4 .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 400px;
+  gap: 10px;
+}
+
+ .book4 .text .btn {
+  display: flex;
+  gap: 10px;
+}
+
+.book4 .text .btn a {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.book4 .text .btn a:hover {
+  background-color: black;
+  color: white;
+  padding: 8.4px;
+  border: 2px solid white;
+}
+
+.sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 80px;
+  border-top: 2px solid black;
+  background-color: #f9f9f9;
+}
+
+.sentence .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: smaller;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+  padding: 20px 50px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons span {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 8px;
+}

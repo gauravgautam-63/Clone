@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar .logo {
+  padding: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.navbar .menu .menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu .menu-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .menu .menu-item .dropdown {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: none;
+  box-shadow: 0 8px 16px black;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.navbar .menu .menu-item .dropdown li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .menu-item .dropdown li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar .menu .menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.header-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dotted black;
+  width: 90%;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  font-size: 14px;
+  
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.hero .first {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-image: url(https://hd2.tudocdn.net/1186984?w=646&h=284);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  padding: 20px 50px;
+}
+
+.hero .first .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero .first .text a {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 150px;
+  text-align: center;
+}
+
+.hero .first .text a:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero .second  {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-image: url(https://image-us.samsung.com/SamsungUS/home/computing/galaxy-books/galaxy-book4-edge/10072024/SDSAC-8238-GB4-Edge-Configurator-Productlockup-800x600.jpg?$product-details-jpg$);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: black;
+  padding-inline: 20px;
+  padding-top: 110px;
+}
+
+.hero .second .text {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 10px;
+}
+
+.hero .second .text a {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 150px;
+  text-align: center;
+}
+
+.hero .second .text a:hover {
+  background-color: white;
+  color: black;
+}
+
+.power {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/featured/new-releases/11082024/CX-Q4-HolidayNF_11_DT.jpg?$1440_N_JPG$);
+  height: 400px;
+  width: 90%;
+  color: black;
+  margin-top: 80px;
+}
+
+.power .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.power .text a {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 150px;
+  text-align: center;
+}
+
+.power .text a:hover {
+  background-color: white;
+  color: black;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  margin-top: 80px;
+  width: 90%;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  gap: 10px;
+}
+
+.container .card h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.container .card p {
+  font-size: 14px;
+}
+
+.container .card img {
+  width: 100%;
+}
+
+.container .card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container .card .buttons a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.container .card .buttons .learn-more {
+  color: black;
+  border: 1px solid black;
+}
+
+.container .card .buttons .buy-now {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.container .card .buttons .learn-more:hover {
+  background-color: black;
+  color: white;
+}
+
+.container .card .buttons .buy-now:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8.5px;
+}
+
+.interactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  width: 90%;
+  background-color: #f1eff1d5;
+  color: white;
+  gap: 20px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/home/10112024/06-SmartThingsBanner-FT03-D.jpg?$1440_N_JPG$);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-top: 80px;
+}
+
+.interactive .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 100px;
+  width: 400px;
+  color: black;
+}
+
+.interactive .text .btn {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 130px;
+  cursor: pointer;
+}
+
+.interactive .text .btn:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 80px;
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+}
+
+.sentence .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: smaller;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+  padding: 20px 50px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons span {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 8px;
+}

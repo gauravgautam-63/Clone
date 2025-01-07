@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar .logo {
+  padding: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.navbar .menu .menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu .menu-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .menu .menu-item .dropdown {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: none;
+  box-shadow: 0 8px 16px black;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.navbar .menu .menu-item .dropdown li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .menu-item .dropdown li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar .menu .menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.header-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dotted black;
+  width: 90%;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  font-weight: bold;
+}
+
+.best-monitor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.best-monitor .imgg {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 550px;
+  width: 100%;
+  gap: 20px;
+}
+
+.best-monitor .imgg .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.best-monitor .imgg .img1{
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/monitors/11122024/pc/01-1-kv-odyssey-pc.jpg?$448_684_JPG$);
+  color: white;
+}
+
+.best-monitor .imgg .img2 {
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/monitors/11122024/pc/01-2-kv-viewfinity-pc.jpg?$448_684_JPG$);
+}
+
+.best-monitor .imgg .img3 {
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/monitors/11122024/pc/01-3-kv-smart-pc.jpg?$448_684_JPG$);
+}
+
+.best-monitor .imgg .img:hover {
+  scale: 1.1;
+}
+
+.best-monitor .imgg .img a {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.best-monitor .imgg .img a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.offers .imgg {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 550px;
+  width: 100%;
+  gap: 20px;
+}
+
+.offers .imgg .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  font-size: small;
+  background-color: #f9f9f9;
+  gap: 10px;
+}
+
+.offers .imgg .img h3 {
+  text-align: center;
+  width: 300px;
+}
+
+.offers .imgg .img1 {
+grid-row: span 2;
+background-image: url(https://images.samsung.com/is/image/samsung/assets/us/monitors/12262024/SDSAC-7988-LS57CG952NNXZA-HP-MM-LargeTile-DT-684x684.jpg?$684_684_JPG$);
+}
+
+.offers .imgg .img a {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.offers .imgg .img a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.ideal-monitor  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.ideal-monitor .imgg {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 300px;
+  width: 100%;
+  gap: 20px;
+}
+
+.ideal-monitor .imgg .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  gap: 10px;
+}
+
+.ideal-monitor .imgg .img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.ideal-monitor .imgg .img a {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.ideal-monitor .imgg .img a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.odyssey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+  gap: 20px;
+  background-color: black;
+  color: white;
+  height: 500px;
+}
+
+.odyssey .btn a {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.odyssey .btn a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.odyssey .imgg {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 300px;
+  width: 95%;
+  gap: 20px;
+}
+
+.odyssey .imgg .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  gap: 10px;
+}
+
+.odyssey .imgg .img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.gaming-monitor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-top: 80px;
+  gap: 20px;
+  background-color: black;
+  color: white;
+  height: 700px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/monitors/12102024/Resized_SDSAC-8080-Odyssey-OLED-G9-PCD_DT_1440x810.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.gaming-monitor .text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+}
+
+.gaming-monitor .text a {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+}
+
+.gaming-monitor .text a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.refresh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 80px;
+  gap: 20px;
+  background-color: black;
+  color: white;
+  height: 500px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/monitors/11132024/RR_gradient_asset.png?$1440_N_PNG$);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.refresh  a {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+}
+
+.refresh  a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 80px;
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+}
+
+.sentence .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: smaller;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+  padding: 20px 50px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons span {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 8px;
+}

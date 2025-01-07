@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navbar .logo {
+  padding: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.navbar .menu .menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu .menu-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .menu .menu-item .dropdown {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: none;
+  box-shadow: 0 8px 16px black;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.navbar .menu .menu-item .dropdown li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .menu-item .dropdown li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar .menu .menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.header-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dotted black;
+  width: 90%;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 600px;
+  background-image: url(../Images/Screenshot\ 2025-01-06\ 160529.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.aitv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: black;
+  color: white;
+  padding: 80px;
+  gap: 50px;
+}
+
+.aitv .neoqled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+
+.aitv .gen3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.aitv .gen3 img {
+width: 50%;
+}
+
+.aitv .gen3 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aitv .enhance {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 70%;
+}
+
+.aitv video {
+  width: 100%;
+}
+
+.proof {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/global/hq/vd/tvs/qled-tv/highlights/2024-neo-qled-tv-f01-2-new-2024-nq-ai-processors-pc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 700px;
+  background-color: black;
+  color: white;
+  padding-inline: 200px;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+.proof .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+}
+
+.proof .text1 h4 {
+  color: blue;
+}
+
+.proof .text2 h2,h4 {
+  color: blue;
+}
+
+.proof .text2 .grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  gap: 30px;
+}
+
+.proof .text2 .grid .down {
+  display: flex;
+  flex-direction: column;
+}
+
+.innovations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  gap: 20px;
+}
+
+.innovations img {
+  width: 80%;
+}
+
+.innovations p {
+  width: 900px;
+  text-align: center;
+}
+
+.picture, .sound, .focus, .soundbar, .smart, .degin{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  gap: 20px;
+  padding-inline: 150px;
+  padding-bottom: 100px;
+}
+
+.picture h1 {
+  color: blue;
+}
+
+.picture .new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.picture .new img {
+  width: 50px;
+}
+
+.picture  p {
+  width: 600px;
+}
+
+.picture .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture video {
+  width: 100%;
+}
+
+.sound h1 {
+  color: blue;
+}
+
+.sound .new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sound .new img {
+  width: 50px;
+}
+
+.sound  p {
+  width: 600px;
+}
+
+.sound .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound video {
+  width: 120%;
+}
+
+.focus .new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.focus .new img {
+  width: 50px;
+}
+
+.focus  p {
+  width: 600px;
+}
+
+.focus .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focus video {
+  width: 100%;
+}
+
+.soundbar .new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.soundbar .new img {
+  width: 50px;
+}
+
+.soundbar  p {
+  width: 600px;
+}
+
+.soundbar .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soundbar video {
+  width: 100%;
+}
+
+.smart h1 {
+  color: blue;
+}
+
+.smart .new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.smart .new img {
+  width: 50px;
+}
+
+.smart  p {
+  width: 600px;
+}
+
+.smart .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smart video {
+  width: 100%;
+}
+
+.degin h1 {
+  color: blue;
+}
+
+.degin .new {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.degin .new img {
+  width: 50px;
+}
+
+.degin  p {
+  width: 600px;
+}
+
+.degin .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.degin video {
+  width: 100%;
+}
+
+.sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 80px;
+  border-top: 2px dotted black;
+  background-color: #f9f9f9;
+}
+
+.sentence .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: smaller;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 20px 50px;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons span {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 8px;
+}

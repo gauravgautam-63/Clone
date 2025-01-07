@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 2px dotted black;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.navbar .logo {
+  padding: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .menu .menu-item {
+  position: relative;
+}
+
+.navbar .menu .menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu .menu-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .menu .menu-item .dropdown {
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: none;
+  box-shadow: 0 8px 16px black;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.navbar .menu .menu-item .dropdown li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .menu-item .dropdown li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar .menu .menu-item:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  list-style: none;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero .video {
+  display: flex;
+  width: 90%;
+}
+
+.hero video {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin-left: 45%;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero .text h1 {
+  font-size: 1.2cm;
+}
+
+.hero .text .btn {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 150px;
+}
+
+.hero .text .btn:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+  width: 90%;
+}
+
+.product h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.product .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.product .tabs a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.product .tabs a.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+.product .tabs a:hover {
+  color: #555;
+}
+
+.product .product_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product .product_grid .product_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.product .product_grid .product_card img {
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.product .product_grid .product_card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product .product_grid .product_card .discount {
+  color: #007aff;
+  margin-bottom: 5px;
+}
+
+.product .product_grid .product_card .buy {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 100px;
+  border-radius: 15px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.product .product_grid .product_card .buy:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.lucky {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 280px;
+  width: 90%;
+  margin-top: 50px;
+  background-color: #f1eff1d5;
+  color: white;
+  gap: 40px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/home/12262024-8am/HP-Shopapp-D.jpg?$1440_N_JPG$);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.lucky .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.lucky .text .btn {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 150px;
+}
+
+.lucky .text .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.best_deal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  gap: 50px;
+  width: 90%;
+  font-size: 13px;
+}
+
+.best_deal .imgg {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.best_deal .imgg::-webkit-scrollbar {
+  display: none;
+}
+
+.tv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  gap: 400px;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/home/01032025/W42_LoB1_D_1440x810_1x.jpeg?$1440_810_JPG$);
+}
+
+.tv .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.tv .tabs a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.tv .tabs a.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+.tv .tabs a:hover {
+  color: #555;
+}
+
+.tv .down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.tv .btn {
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 130px;
+  cursor: pointer;
+}
+
+.tv .btn:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+.samsung {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.samsung video {
+  width: 90%;
+  height: 900px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(247, 242, 242);
+  width: 90%;
+  gap: 10px;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+
+.home .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.home .tabs a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.home .tabs a.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+.tv .tabs a:hover {
+  color: #555;
+}
+
+.home img {
+  width: 50%;
+}
+
+.home .btn {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 200px;
+  cursor: pointer;
+}
+
+.home .btn:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+.flexcam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.flexcam video {
+  width: 90%;
+}
+
+.interactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  width: 90%;
+  margin-top: 50px;
+  background-color: #f1eff1d5;
+  color: white;
+  gap: 20px;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/us/home/10112024/06-SmartThingsBanner-FT03-D.jpg?$1440_N_JPG$);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.interactive .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 100px;
+  width: 400px;
+  color: black;
+}
+
+.interactive .text .btn {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 130px;
+  cursor: pointer;
+}
+
+.interactive .text .btn:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.sentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+  margin-top: 60px;
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+}
+
+.sentence .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: smaller;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 2px dotted black;
+  padding: 20px 50px;
+  width: 90%;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.footer-bottom p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+  font-size: 6mm;
+}
+
+.social-icons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
